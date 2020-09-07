@@ -6,13 +6,14 @@
   <div class="form-item">
     <label>Author</label>
     <select name="author">
-      <% authors.forEach(author => { %> <% if (author.id === book.author) { %>
+      <% authors.forEach(author => { %> <% if (author.id == book.author) { %>
       <option selected label="<%= author.name %>" value="<%= author.id %>">
-        <% } else { %> </option
-      ><option label="<%= author.name %>" value="<%= author.id %>">
+        <% } else { %>
+      </option>
+      <option label="<%= author.name %>" value="<%= author.id %>">
         <% } %> <% }) %>
-      </option></select
-    >
+      </option>
+    </select>
   </div>
 </div>
 
@@ -39,7 +40,7 @@
 <div class="form-row">
   <div class="form-item form-item-no-grow">
     <label>Cover</label>
-    <input type="file" name="cover" class="book-cover filepond--root" />
+    <input type="file" name="cover" class="book-cover filepond" />
   </div>
   <div class="form-item">
     <label>Description</label>

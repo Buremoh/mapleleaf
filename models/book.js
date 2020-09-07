@@ -13,7 +13,7 @@ const bookSchema = new mongoose.Schema({
     required: true,
   },
   pageCount: {
-    type: Number,   
+    type: Number,
   },
   createdAt: {
     type: Date,
@@ -21,10 +21,10 @@ const bookSchema = new mongoose.Schema({
     default: Date.now,
   },
   coverImage: {
-    type: Buffer,   
+    type: Buffer,
   },
   coverImageType: {
-    type: String,    
+    type: String,
   },
   author: {
     type: mongoose.Schema.Types.ObjectId,

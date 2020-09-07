@@ -17,7 +17,7 @@ function ready() {
     rootStyles.getPropertyValue("--book-cover-aspect-ratio")
   );
   const coverHeight = coverWidth / coverAspectRatio;
-  FilePond.registerPlugin(
+  Filepond.registerPlugin(
     FilePondPluginImagePreview,
     FilePondPluginImageResize,
     FilePondPluginFileEncode
@@ -31,4 +31,3 @@ function ready() {
 
   FilePond.parse(document.body);
 }
-

@@ -41,6 +41,20 @@ body {
   font-weight: 500;
 }
 
+.new-book {
+  justify-content: flex-end;
+  padding-left: 56%;
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+.new-author {
+  justify-content: flex-end;
+  padding-left: 51%;
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
 .error-message {
   color: hsl(var(--color-danger-hue), 100%, 50%);
 }
